@@ -1,0 +1,149 @@
+/* published.css */
+.filter-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filters-panel {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.filters-panel.active {
+    display: flex;
+    gap: 20px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-group select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.published-articles-container {
+    padding: 20px;
+}
+
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.status.unassigned {
+    background: #f1c40f;
+    color: #fff;
+}
+
+.status.assigned {
+    background: #2ecc71;
+    color: #fff;
+}
+
+.magazine-assignment {
+    border-left: 1px solid #eee;
+    padding-left: 20px;
+    min-width: 300px;
+}
+
+.assignment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.magazine-number {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.visibility-toggle {
+    display: flex;
+    gap: 15px;
+}
+
+.visibility-toggle label {
+    margin-left: 5px;
+}
+
+.assign-btn, .modify-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.assign-btn:hover, .modify-btn:hover {
+    background: #2980b9;
+}
+
+.visibility-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.visibility-badge.public {
+    background: #3498db;
+    color: white;
+}
+
+.visibility-badge.private {
+    background: #95a5a6;
+    color: white;
+}
+
+.article-card.assigned .assignment-form {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .article-card {
+        flex-direction: column;
+    }
+
+    .magazine-assignment {
+        border-left: none;
+        border-top: 1px solid #eee;
+        padding: 20px 0 0 0;
+        margin-top: 20px;
+    }
+
+    .filters-panel {
+        flex-direction: column;
+    }
+}

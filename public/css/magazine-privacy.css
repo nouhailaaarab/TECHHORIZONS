@@ -1,0 +1,92 @@
+/* magazine-privacy.css */
+.filter-controls {
+    display: flex;
+    gap: 20px;
+}
+
+.visibility-filter {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.magazines-container {
+    padding: 20px;
+}
+
+.magazines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.magazine-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.magazine-info {
+    margin-bottom: 20px;
+}
+
+.magazine-info h3 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+}
+
+.publication-date, .article-count {
+    color: #7f8c8d;
+    margin: 5px 0;
+}
+
+.privacy-controls {
+    display: flex;
+    gap: 10px;
+}
+
+.privacy-select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.save-privacy-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.save-privacy-btn:hover {
+    background-color: #2980b9;
+}
+
+.save-privacy-btn.saved {
+    background-color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+    .verification-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .user-details {
+        flex-direction: column;
+    }
+    
+    .verification-actions {
+        margin-top: 20px;
+    }
+    
+    .header-stats {
+        flex-direction: column;
+    }
+}

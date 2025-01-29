@@ -1,0 +1,215 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f5f6fa;
+    --text-color: #2c3e50;
+    --error-color: #e74c3c;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 20px;
+}
+
+.auth-container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.auth-header {
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.auth-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #e1e1e1;
+}
+
+.auth-tab {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--text-color);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.auth-tab.active {
+    color: var(--primary-color);
+}
+
+.auth-tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+    z-index: 1;
+}
+
+.auth-forms {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.auth-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.auth-form.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.form-group .error {
+    color: var(--error-color);
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    background: #2980b9;
+}
+
+.social-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+    .auth-container {
+        margin: 10px;
+    }
+
+    .auth-forms {
+        height: 450px;
+    }
+}
+/* Add/modify these styles in your styles.css */
+
+.auth-forms {
+    position: relative;
+    /* Remove the fixed height */
+    /* height: 400px; */
+    overflow: hidden;
+    /* Add smooth transition for height changes */
+    transition: height 0.3s ease-in-out;
+}
+
+.auth-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.auth-form.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Update the media query to remove fixed height */
+@media (max-width: 480px) {
+    .auth-container {
+        margin: 10px;
+    }
+    /* Remove this as we're handling height dynamically
+    .auth-forms {
+        height: 450px;
+    }
+    */
+}

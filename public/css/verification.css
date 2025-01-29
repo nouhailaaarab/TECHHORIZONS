@@ -1,0 +1,101 @@
+.header-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-item {
+    background: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stat-label {
+    color: #7f8c8d;
+}
+
+.stat-value {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.verification-container {
+    padding: 20px;
+}
+
+.verification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.verification-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-details {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info h3 {
+    margin: 0 0 5px 0;
+    color: #2c3e50;
+}
+
+.user-info p {
+    margin: 3px 0;
+    color: #7f8c8d;
+}
+
+.request-date {
+    font-size: 0.9em;
+    color: #95a5a6;
+}
+
+.verification-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.verify-btn, .reject-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.verify-btn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.verify-btn:hover {
+    background-color: #27ae60;
+}
+
+.reject-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.reject-btn:hover {
+    background-color: #c0392b;
+}
