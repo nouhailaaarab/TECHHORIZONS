@@ -1,5 +1,4 @@
 // subscribers.js
-// Search functionality
 document.getElementById('searchSubscriber').addEventListener('input', function(e) {
     const searchTerm = e.target.value.toLowerCase();
     document.querySelectorAll('.subscriber-card').forEach(card => {

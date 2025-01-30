@@ -70,7 +70,7 @@
         </div>
     </div>
 </div>
-    <script src="{{asset('js/bouth.js')}}"></script>
+    
     <script src="{{asset('js/Dashboard.js')}}"></script>
 </body>
 </html>

@@ -80,7 +80,7 @@
                         <div class="article-content">
                             <div class="article-header">
                                 <h3>{{$article->title}}</h3>
-                                <span class="status assigned">Magazine #{{$article->magazine->N_magazine}}</span>
+                                <span class="status assigned">Numeroº {{$article->magazine->N_magazine}}</span>
                             </div>
                             <p class="article-preview">{{Str::limit($article->content,30)}}</p>
                             <div class="article-metadata">

@@ -20,7 +20,7 @@ navItems.forEach(item => {
 
 //profile
 
-// Add these functions to your existing Dashboard.js
+
 
 function toggleEdit(fieldId) {
     const input = document.getElementById(fieldId);
@@ -39,14 +39,3 @@ function toggleEdit(fieldId) {
     }
 }
 
-// Handle avatar upload
-document.getElementById('avatar-upload').addEventListener('change', function(e) {
-    const file = e.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            document.getElementById('avatar-preview').src = e.target.result;
-        };
-        reader.readAsDataURL(file);
-    }
-});

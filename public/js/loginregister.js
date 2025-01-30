@@ -79,6 +79,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Rest of the validation and form submission code remains the same...
-    // [Previous validation and form submission code here]
+   
 });

@@ -1,4 +1,4 @@
-// published.js
+// published.js   for magazines and articles
 function toggleFilters() {
     const filtersPanel = document.getElementById('filtersPanel');
     filtersPanel.classList.toggle('active');

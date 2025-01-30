@@ -37,6 +37,5 @@
         </div>
     </div>
     <script src="{{ asset('js/Dashboard.js') }}"></script>
-    <script src="{{ asset('js/suivi.js') }}"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@
                     <path d="M15 18l-6-6 6-6"/>
                 </svg>
             </a>
-            <h1>N# {{ $magazine->N_magazine }}</h1>
+            <h1>Numeroº {{ $magazine->N_magazine }}</h1>
             </div>
             <div class="magazine-container">
             <br>
