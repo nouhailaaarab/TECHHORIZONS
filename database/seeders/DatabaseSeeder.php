@@ -17,12 +17,12 @@ class DatabaseSeeder extends Seeder
 
         
         
-        User::factory()->create([
-            'name' => 'IT Manager',
-            'email' => 'it@gmail.com',
-            'rule' => 'Responsable',
-            'password'  => 'Password',
-        ]);
+        // User::factory()->create([
+        //     'name' => 'Blockchain Manager',
+        //     'email' => 'blockchain@gmail.com',
+        //     'rule' => 'Responsable',
+        //     'password'  => 'Password',
+        // ]);
 
         
 

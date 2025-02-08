@@ -121,9 +121,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #2c3e50;
 }
 .comment-author{
     font-weight: bold;
+    color: #2c3e50;
 }
 .comment-author{
     font-weight: bold;
@@ -131,4 +133,5 @@
 .comment-content{
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #2c3e50;
 }

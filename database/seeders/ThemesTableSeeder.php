@@ -16,21 +16,17 @@ class ThemesTableSeeder extends Seeder
     public function run(): void
     {
         
-        $ITUserId = 13;
-        $IoTUserId = 15;
+        
+        $blockchainUserId = 27;
 
         // Seed themes
         Theme::create([
-            'name' => 'IoT',
-            'description' => 'Internet of Things, connecting physical devices to collect and exchange data',
-            'user_id' => $IoTUserId, // Linking to the user
+            'name' => 'Blockchain',
+            'description' => 'A decentralized and distributed digital ledger technology that ensures secure, transparent, and tamper-proof transactions across multiple parties without the need for a central authority.',
+            'user_id' => $blockchainUserId, // Linking to the user
         ]);//
 
-        Theme::create([
-            'name' => 'IT',
-            'description' => 'The development of computer systems that can perform tasks that typically require human intelligence',
-            'user_id' => $ITUserId, // Linking to the user
-        ]);//
+       
 
         
     }

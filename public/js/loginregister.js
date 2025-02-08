@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         confirmPassword: (value, password) => value === password
     };
 
-    // Error handling
+    // Error handling !!!!
     const handleError = {
         show: (input, message) => {
             const errorSpan = input.nextElementSibling;

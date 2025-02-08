@@ -16,9 +16,9 @@ document.querySelectorAll('.assign-btn').forEach(button => {
             return;
         }
 
-        // Here you would typically make an API call to assign the article
+        // 
         const status = articleCard.querySelector('.status');
-        status.textContent = `Magazine #${magazineNumber}`;
+        status.textContent = `Numeroº${magazineNumber}`;
         status.classList.remove('unassigned');
         status.classList.add('assigned');
         

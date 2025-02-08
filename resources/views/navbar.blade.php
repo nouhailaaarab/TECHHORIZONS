@@ -14,7 +14,7 @@
                 <path d="M3 4v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V4"></path>
                 <path d="M20 4H4a2 2 0 1 0 0 4h16"></path>
             </svg>
-            <span>Magazine</span>
+            <span>Magazines</span>
         </a>
     </div>
 </nav>

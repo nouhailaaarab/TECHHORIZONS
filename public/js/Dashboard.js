@@ -8,7 +8,7 @@ function toggleSidebar() {
     }
 }
 
-// Handle active nav items
+// Handle active nav items !!!!!!!!
 const navItems = document.querySelectorAll('.nav-item');
 navItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -18,9 +18,9 @@ navItems.forEach(item => {
 });
 
 
-//profile
 
 
+//clear password
 
 function toggleEdit(fieldId) {
     const input = document.getElementById(fieldId);

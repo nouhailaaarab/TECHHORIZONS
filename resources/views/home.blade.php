@@ -12,11 +12,6 @@
     <main class="home-container">
         
         <section class="hero-section">
-            <div class="animated-background">
-                <div class="shape shape1"></div>
-                <div class="shape shape2"></div>
-                <div class="shape shape3"></div>
-            </div>
             <div class="hero-content">
                 <h1>Welcome to Our Platform</h1>
                 <p>Discover amazing content and connect with others</p>

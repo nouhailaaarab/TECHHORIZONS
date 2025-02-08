@@ -103,6 +103,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    margin-left: 20px;
 }
 
 
@@ -118,6 +119,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: var(--card-shadow);
+    margin-left: 30px;
 }
 
 .category-header {

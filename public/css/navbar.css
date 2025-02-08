@@ -1,6 +1,12 @@
-
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #984593;
+    --background-color: #f5f6fa;
+    --text-color: #2c3e50;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 .site-navigation {
-    background-color: white;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
     box-shadow: var(--card-shadow);
     padding: 1rem 2rem;
     position: sticky;
@@ -21,7 +27,7 @@
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
-    color: var(--text-color);
+    color: white;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: all 0.3s ease;

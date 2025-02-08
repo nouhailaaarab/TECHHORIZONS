@@ -2,7 +2,7 @@
     <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
     <div class="logo-section">
         <img src="{{asset('images/HTLogo.png')}}" alt="Logo" class="logo-img">
-        <span class="logo-text">HorizonTech</span>
+        <span class="logo-text">TechHorizon</span>
     </div>
     <nav class="nav-menu">
         <div class="nav-item">

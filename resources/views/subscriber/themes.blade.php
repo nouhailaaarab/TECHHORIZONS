@@ -29,7 +29,7 @@
                     @method('DELETE')
                     <input type="hidden" value="{{$theme->id}}" name="theme_id">
                     <div class="category-header">
-                        <span class="category-icon">🎨</span>
+                        <span class="category-icon">🤖</span>
                         <h2>{{$theme->name}}</h2>
                         <button class="follow-btn following">Following</button>
                     </div>
@@ -50,7 +50,7 @@
                     @csrf
                         <input type="hidden" value="{{$theme->id}}" name="theme_id">
                         <div class="category-header">
-                            <span class="category-icon">🎨</span>
+                            <span class="category-icon">🔒</span>
                             <h2>{{$theme->name}}</h2>
                             <button class="follow-btn ">Follow</button>
                         </div>

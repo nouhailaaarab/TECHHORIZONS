@@ -8,7 +8,7 @@ document.querySelectorAll('.save-privacy-btn').forEach(button => {
         const select = card.querySelector('.privacy-select');
         const magazineTitle = card.querySelector('h3').textContent;
 
-        // Here you would typically make an API call to update the privacy setting
+        
         this.textContent = 'Sauvegardé!';
         this.classList.add('saved');
 

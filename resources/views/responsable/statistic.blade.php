@@ -34,7 +34,7 @@
                 </div>
                 <div class="statistic-item">
                     <i>
-                    `   <svg class="nav-icon" viewBox="0 0 24 24"> 
+                        <svg class="nav-icon" viewBox="0 0 24 24"> 
                             <path fill="currentColor" d="M4 2h12l4 4v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm0 2v16h14V7h-5V2H4zm4 6h8v2H8v-2zm0 4h6v2H8v-2z"/>
                         </svg>
                     </i>
